@@ -1,33 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convention Center</title>
-  <!-- CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'text-first': '#1C1C1C',
-            'text-second': '#777',
-            'gradient-start': '#FF8938',
-            'gradient-end': '#F00',
-            'gradient-start2': '#F4F4F4',
-            'gradient-end2': '#F4F4F4',
-          }
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'text-first': '#1C1C1C',
+                        'text-second': '#777',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
+                        'gradient-start2': '#F4F4F4',
+                        'gradient-end2': '#F4F4F4',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
+    <style>
+        .font-poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-poppins">
+    <header class="max-w-screen-xl mx-auto px-4 py-5 md:px-8 lg:px-16">
+        <!-- Navbar Section -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Contact</a></li>
+                            <li><a>Subscribe</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl lg:text-2xl font-bold">Abacus Convention Center</a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Subscribe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
